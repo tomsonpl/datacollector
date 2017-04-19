@@ -1,0 +1,46 @@
+body {
+  margin:0;
+  padding:0;
+}
+
+button:hover {
+  cursor:pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #000;
+}
+
+.container {
+  display:flex;
+  margin: 1%;
+  justify-content: center;
+  flex: 1;
+}
+
+.error {
+  color: red;
+}
+
+.loading {
+  font-size:1.5em;
+}
+
+.start-button:before {
+  content: "Collect Data";
+  font-size:4em;
+}
+
+.back-button:before{
+  content: 'Check Previous';
+  font-size: 2em;
+}
+
+.next-button:before{
+  content: 'Check Next';
+  font-size: 2em;
+}

@@ -1,34 +1,29 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
+
+import { loadData } from '../actions';
 
 import DataView from '../components/DataView';
 
-class DataCollector extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      dataLoaded: false
-    };
-  }
-
-  render() {
-    return (
-      <DataView
-        {...this.props}
-      />
-    );
-  }
-}
+const DataCollector = (props) => {
+  return (
+    <DataView
+      className="data-view"
+      {...props}
+      onButtonClick={props.loadData}
+    />
+  );
+};
 
 const mapStateToProps = (state) => {
   return {
-    data: state.data
-    // processing: state.processing.sources,
-    // error: state.error.sources
+    processing: state.processing,
+    data: [...state.data]
   };
 };
 
 const actions = {
+  loadData
 };
 
 export default connect(mapStateToProps, actions)(DataCollector);
