@@ -10,7 +10,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "NODE_ENV=production npm run clean && webpack -p",
-    "serve": "webpack-dev-server",
+    "start": "webpack-dev-server",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js 'test/**/*.js'",
     "test:watch": "npm run test -- --watch"
   },

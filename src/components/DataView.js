@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Table from './Table';
+import Table from './common/Table';
 
 class DataView extends Component {
 
@@ -59,7 +59,7 @@ class DataView extends Component {
     const { data, processing: { error, loading } } = this.props;
 
     return (
-      <div>
+      <div className="data-view">
         <button
           className="start-button"
           type="button"
