@@ -4,12 +4,19 @@ Collect data from an endpoint, made with use of Webpack 2, React, Redux
 
 ## Installation
 
-Clone repo, $yarn / $npm install
+Clone repo, 
+`$yarn`
+or
+` $npm install`
 
 ## Run
 
-$yarn start / npm  start
+`$yarn start`
+or
+`$npm start`
 
 ### Tests
 
-WILL BE READY SOON
+`$yarn test`
+or
+`$npm test`
