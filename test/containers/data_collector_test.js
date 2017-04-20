@@ -26,7 +26,7 @@ describe('Data Collector', () => {
     });
   });
 
-  //FAILS AT THE MOMENT
+  // CURRENTLY FAILS
   // describe('after starting', () => {
   //   it('has a loading div', () => {
   //     expect(component.find('.loading')).to.exist;

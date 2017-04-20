@@ -1,6 +1,6 @@
 import { expect } from '../test_helper';
 import reducer from '../../src/reducers/processing';
-import { expectedData } from '../const';
+import expectedData from '../const';
 
 describe('data reducer', () => {
   let state = null;

@@ -1,4 +1,4 @@
-const expectedData = [{
+const expectedData = {
   result: {
     date: '2017-04-20',
     grupy: [
@@ -26,6 +26,6 @@ const expectedData = [{
       }
     ]
   }
-}];
+};
 
 export default expectedData;
