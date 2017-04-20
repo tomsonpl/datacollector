@@ -7,10 +7,12 @@ import DataView from '../components/DataView';
 
 const DataCollector = (props) => {
   return (
-    <DataView
-      {...props}
-      onButtonClick={props.loadData}
-    />
+    <div className="data-collector">
+      <DataView
+        {...props}
+        onButtonClick={props.loadData}
+      />
+    </div>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Table from './common/Table';
+import Loading from './common/Loading';
 
 class DataView extends Component {
 
@@ -66,26 +67,26 @@ class DataView extends Component {
           onClick={this.props.onButtonClick}
         />
         {loading &&
-          <div className="loading">Loading...</div>
+          <Loading />
         }
         <div className="error">{error}</div>
         {data.length > 0 &&
           <div>
-            <p>
+            <p className="generated-text">
               {`Generated on 
                 ${data[data.length - this.state.value].result.date}
                 ${data[data.length - this.state.value].result.time}
               `}
             </p>
             <button
+              className="back-button"
               type="button"
               onClick={() => this.increaseValue()}
-              className="back-button"
             />
             <button
+              className="next-button"
               type="button"
               onClick={() => this.decreaseValue()}
-              className="next-button"
             />
             <Table
               tableClass="table"

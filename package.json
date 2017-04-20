@@ -1,5 +1,5 @@
 {
- "name": "DataCollector",
+  "name": "DataCollector",
   "version": "1.0.0",
   "description": "A feature to collect data from the API",
   "main": "index.js",
